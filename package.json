@@ -1,18 +1,17 @@
 {
   "name": "dih4djs",
-  "version": "1.1.1",
+  "version": "1.2.0-dev.6bed1d1c-7716-11ed-a1eb-0242ac120002",
   "description": "interaction handler for the discord.js library",
   "scripts": {
-    "test": "node ./__tests__/index.test.js",
-    "build": "rimraf ./source && tsc"
+    "test": "node --trace-warnings ./tests/index.test.js"
   },
-  "main": "./source/index.js",
+  "main": "./src/index.js",
+  "typings": "./typings/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/OoP1nk/DIH4DJS.git"
   },
   "keywords": [
-    "discord.js",
     "discordjs",
     "discord",
     "interaction-handler",
@@ -29,7 +28,8 @@
   "homepage": "https://github.com/OoP1nk/DIH4DJS#readme",
   "dependencies": {
     "chalk": "^4.1.2",
-    "discord.js": "^14.6.0"
+    "discord.js": "^14.7.1",
+    "ms": "^2.1.3"
   },
   "devDependencies": {
     "@types/node": "^18.11.9",
